@@ -146,9 +146,7 @@ class YOLO(object):
                 right = min(image.size[0], np.floor(right + 0.5).astype('int32'))
                 print(label, (left, top), (right, bottom))  # 边框
 
-                '''
-                在这里加了几行,竟然报错
-                '''
+                
                 # print('行人的图片',type(image.crop((left,top,right,bottom))))
 
                 # people_pic=image[top:bottom,left:right]
